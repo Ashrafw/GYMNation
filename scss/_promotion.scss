@@ -1,0 +1,131 @@
+.promotion {
+  background-color: rgb(255, 255, 255);
+
+  .promotion-container {
+    width: 90%;
+    max-height: 600px;
+    color: rgb(0, 0, 0);
+    // justify-content: center;
+    // align-items: center;
+    margin: auto;
+  }
+
+  .gridrow {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    // grid-gap: 20px;
+    // grid-auto-rows: minmax(100px, auto);
+    // margin: auto;
+    // padding: 30px 5px;
+    // align-items: center;
+  }
+
+  .grid-item {
+    margin: 15px;
+    flex: 1 1 450px;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    /* margin: 50px 0; */
+  }
+  .grid-item-1 {
+    background: url('../images/gym2.jpg') top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+  }
+
+  .grid-item-2 {
+    background: url('../images/g3.jpg') top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+  }
+
+  .grid-item-3 {
+    background: url('../images/g2.jpg') center;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .grid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(249, 249, 0);
+    padding: 20px 5px;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    background-color: rgba(255, 255, 0, 0.221);
+  }
+  .grid-content-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 5px;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.427);
+  }
+
+  .grid-content-mid img {
+    padding: 5px 12px;
+    border: solid 6px rgb(227, 227, 0);
+  }
+
+  .grid-content h2 {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Red Rose', cursive;  */
+    text-shadow: 2px 2px 4px #000000;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    border: rgb(255, 255, 2) solid 4px;
+  }
+
+  .grid-content h4 {
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .grid-content-mid {
+    color: #fff;
+  }
+  .grid-content-mid p {
+    font-size: 0.9rem;
+    padding: 10px 10px;
+    text-align: justify;
+  }
+  .grid-content a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .grid-content a:hover {
+    color: yellow;
+  }
+
+  .grid-content-mid img {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.swim {
+  background: linear-gradient(#1b1c1e45, #1b1c1e),
+    url('../images/swim.jpg') center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 200px;
+  background-size: cover;
+}
+
+//desktop

@@ -1,0 +1,235 @@
+.Classes {
+  background-color: #1b1c1e;
+
+  .classes-container {
+    width: 90%;
+    max-width: 1350px;
+    /* height: 600px; */
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .classes-to-join {
+    text-align: center;
+    padding: 30px 0px 0px;
+    color: #fff;
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      padding: 5px 0px;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+
+  .gic1 {
+    grid-area: gic1;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/HIIT.jpg') bottom;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gic2 {
+    grid-area: gic2;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/crossfit.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gic3 {
+    grid-area: gic3;
+    background: linear-gradient(
+        to bottom left,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/judo.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .gic4 {
+    grid-area: gic4;
+    background: linear-gradient(
+        to right,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/kickboxing.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .gic5 {
+    grid-area: gic5;
+    background: rgb(45, 45, 45);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 15px;
+    img {
+      width: 90%;
+
+      border: solid 8px rgb(255, 255, 255);
+    }
+    /* border-radius: 10; */
+  }
+
+  .gic6 {
+    grid-area: gic6;
+    background: linear-gradient(
+        to left,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/yoga.jpg') bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .gic7 {
+    grid-area: gic7;
+    background: linear-gradient(
+        to top right,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/boxing.jpg') top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .gic8 {
+    grid-area: gic8;
+    background: linear-gradient(
+        to top,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/rockclimbing.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .gic9 {
+    grid-area: gic9;
+    background: linear-gradient(
+        to top left,
+        rgba(255, 225, 0, 0),
+        rgba(255, 225, 0, 0.7)
+      ),
+      url('../images/sports/sprint.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .grid-item-clases {
+    height: 200px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    h2 a {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      padding: 10px 0px;
+      font-size: 2.5rem;
+      letter-spacing: 1.4px;
+      color: rgb(255, 255, 255);
+      font-weight: 900;
+      text-shadow: 2px 2px 4px #000000;
+      text-decoration: none;
+    }
+
+    .grid-item-clases a:hover {
+      color: $color-font-blackish;
+      text-shadow: 1px 1px 1px white;
+    }
+  }
+  .row-grid {
+    display: grid;
+    grid-template-areas:
+      'gic1'
+      'gic2'
+      'gic3'
+      'gic4'
+      'gic5'
+      'gic6'
+      'gic7'
+      'gic8'
+      'gic9';
+    grid-gap: 20px;
+    margin: auto;
+    padding: 30px 5px;
+    align-items: center;
+  }
+  @media (min-width: 851px) {
+    .row-grid {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas:
+        'gic1  gic2  gic3'
+        'gic4  gic5  gic6'
+        'gic7  gic8  gic9';
+    }
+  }
+
+  // ipad
+  @media (min-width: 481px) and (max-width: 850px) {
+    .row-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        'gic1  gic2'
+        'gic3  gic4'
+        'gic6  gic7'
+        'gic8  gic9';
+    }
+    .gic5 {
+      display: none;
+    }
+
+    .grid-item-clases {
+      height: 60px;
+    }
+
+    .grid-item-clases h2 a {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      padding: 10px 0px;
+      font-size: 1.4rem;
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      text-shadow: 2px 2px 4px #000000;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid-item-clases {
+      height: 80px;
+    }
+    .grid-item-clases h2 a {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      padding: 6px 0px;
+      font-size: 1.6rem;
+      color: rgb(255, 255, 255);
+      font-weight: 900;
+      text-shadow: 1px 1px 2px #000000;
+      text-decoration: none;
+    }
+
+    .gic5 {
+      display: none;
+    }
+  }
+}

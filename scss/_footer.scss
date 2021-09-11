@@ -1,0 +1,136 @@
+footer {
+  background-color: #1b1c1e;
+  color: #fff;
+  .container-section {
+    width: 90%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 30px;
+  }
+  img {
+    width: 45px;
+  }
+  .insta-social {
+    width: 65px;
+  }
+  h2 {
+    font-size: 1.6rem;
+    padding: 12px 0;
+    margin-bottom: 4px;
+  }
+  h5 {
+    font-size: 1.2rem;
+    margin-top: 4px;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+  .footer-row {
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .footer-item {
+    padding: 20px 10px;
+
+    a {
+      color: $color-font-grey;
+    }
+
+    a:hover {
+      color: yellow;
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      align-items: center;
+    }
+  }
+}
+.footer-copy {
+  background-color: #131314;
+  color: white;
+  text-align: right;
+  .footer-copy-item {
+    padding: 4px 0;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+// ipad
+@media (min-width: 481px) and (max-width: 768px) {
+  max-width: 768px;
+  margin: auto;
+  footer {
+    .footer-item {
+      padding: 10px 5px;
+      h2 {
+        font-size: 1.1rem;
+        padding: 12px 0;
+        margin-bottom: 2px;
+      }
+      h5 {
+        font-size: 1rem;
+        margin-top: 2px;
+        font-weight: 400;
+        margin-bottom: 2px;
+      }
+
+      a {
+        color: $color-font-grey;
+      }
+
+      a:hover {
+        color: yellow;
+      }
+
+      .social {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+//phone
+@media (max-width: 480px) {
+  max-width: 480px;
+  margin: auto;
+  footer {
+    h2 {
+      font-size: 1.2rem;
+      padding: 12px 0;
+      margin-bottom: 4px;
+    }
+    h5 {
+      font-size: 0.8rem;
+      margin-top: 4px;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+
+    .footer-item {
+      padding: 10px 5px;
+
+      a {
+        color: $color-font-grey;
+      }
+
+      a:hover {
+        color: yellow;
+      }
+
+      .social {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+
+
